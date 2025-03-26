@@ -9,7 +9,7 @@ def load_data(data_url:str) ->pd.DataFrame:
         df = pd.read_csv(data_url)
         return df
     except pd.errors.ParserError as e:
-        print(f"Error: Failed to parse the CSV file from {data_url}.") ")
+        print(f"Error: Failed to parse the CSV file from {data_url}.")
         print(e)
         raise
     except Exception as e:
